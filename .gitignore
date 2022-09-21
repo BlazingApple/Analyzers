@@ -3,3 +3,11 @@
 ################################################################################
 
 /src/.vs
+/src/BlazingApple.Roslyn.Analyzers/obj
+/src/BlazingApple.Roslyn.Generators/bin/Debug/netstandard2.0
+/src/BlazingApple.Roslyn.Generators/obj
+/src/BlazingApple.Tests.Roslyn.Analyzers/bin/Debug/net6.0
+/src/packages
+/src/BlazingApple.Tests.Roslyn.Analyzers/obj
+/src/BlazingApple.Roslyn.Analyzers/bin/Debug/netstandard2.0
+/src/BlazingApple.Analyzers/obj

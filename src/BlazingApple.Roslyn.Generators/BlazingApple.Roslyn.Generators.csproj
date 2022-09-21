@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\Common.csproj.props" />
+
+	<PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+	<LangVersion>10.0</LangVersion>
+	<IsRoslynComponent>true</IsRoslynComponent>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\BlazingApple.Roslyn.Analyzers\BlazingApple.Roslyn.Analyzers.csproj" />
+	</ItemGroup>
+
+</Project>

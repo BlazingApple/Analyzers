@@ -1,0 +1,25 @@
+<Project>
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+		<WarningsAsErrors />
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.354">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(ProjectName)' != 'BlazingApple.Roslyn.Analyzers'">
+		<ProjectReference Include="$(SolutionDir)/BlazingApple.Roslyn.Analyzers/BlazingApple.Roslyn.Analyzers.csproj" OutputItemType="Analyzer" ReferenceOutputAssembly="false" />
+	</ItemGroup>
+</Project>
